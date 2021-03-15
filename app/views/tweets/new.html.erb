@@ -1,10 +1,12 @@
 <h1>Schedule a Tweet</h1>
 
 <%= form_with model: @tweet do |form|%>
+  <%= render 'shared/form_errors', form: form %>
+  
   <div class="mb-3">
-    <%= form.label :twiiter_account_id %>
+    <%= form.label :twitter_account_id %>
     <%= form.collection_select :twitter_account_id, Current.user.twitter_accounts, :id, :username, {}, {class: "form-control"} %>
-    <%= link_to 'Connect you twitter Account', "/auth/twitter" %>
+    <%= link_to 'Connect your Twitter Account', "/auth/twitter" %>
   </div>
 
   <div class="mb-3">
