@@ -12,5 +12,4 @@ class Tweet < ApplicationRecord
   def published?
     tweet_id?
   end
-  
 end
