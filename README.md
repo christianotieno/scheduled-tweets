@@ -2,7 +2,7 @@
 
 - A buffer clone to schedule and posts tweets to [twitter.com](https://twitter.com).
 
-## 2. Built With
+## 1. Built With
 
 - [Ruby on Rails](https://github.com/rails/rails). Frontend UI & Backend data management.
 - [Sidekiq](https://github.com/mperham/sidekiq) for handling background jobs in the [redis](https://github.com/redis/redis) server.
@@ -11,7 +11,7 @@
 - [Bootstrap](https://github.com/twbs/bootstrap) for frontend styling.
 - [postgresql](https://github.com/postgres/postgres) for data storage.
 
-## 3. Pre-requisites
+## 2. Pre-requisites
 
 - Basic to intermediate Ruby skills.
 - Have Ruby, redis, and postgresql installed locally.
@@ -48,13 +48,13 @@ rails start
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## 7. Live link
+## 4. Live link
 
-[Link to Live Page]()
+[Link to Live Page](https://coo-scheduled-tweets.herokuapp.com/)
 
 ---
 
-## 8. Author Section
+## 5. Author Section
 
 👤 **Christian Otieno**
 
@@ -64,7 +64,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ---
 
-## 9. 🤝 Contributing
+## 6. 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
@@ -72,7 +72,7 @@ Feel free to check the [issues page](https://github.com/christianotieno/schedule
 
 ---
 
-## 10. Show your support
+## 7. Show your support
 
 Give a ⭐️ if you like this project!
 
