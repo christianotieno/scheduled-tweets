@@ -1,0 +1,17 @@
+<h1>Edit Password</h1>
+
+<%= form_with model: Current.user, url: edit_password_path do |form| %>
+  <%= render 'shared/form_errors', form: form %>
+  
+  <div>
+    <%= form.label :password %>
+    <%= form.password_field :password, class: "form-control", placeholder: "password" %>
+  </div>
+  <div class="mb-3">
+    <%= form.label :password_confirmation %>
+    <%= form.password_field :password_confirmation, class: "form-control", placeholder: "confirm password"%>
+  </div>
+  <div class="mb-3">
+    <%= form.submit "Change Password", class: "btn btn-primary"%>
+  </div>
+<% end %>
