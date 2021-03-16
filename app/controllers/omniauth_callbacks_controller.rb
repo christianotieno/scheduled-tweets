@@ -1,4 +1,6 @@
 class OmniauthCallbacksController < ApplicationController
+  before_action :require_user_logged_in!
+
   def twitter
     twitter_account = Current.user.twitter_accounts.where(username: auth.info.nickname).first_or_initialize
     twitter_account.update(

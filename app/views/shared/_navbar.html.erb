@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <%= link_to 'Navbar', root_path, class: "navbar-brand" %>
+    <%= link_to 'Home', root_path, class: "navbar-brand" %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -16,21 +16,21 @@
           <%= link_to 'About', about_path, class: "nav-link" %>
         </li>
       </ul>
-      <ul class="navbar ms-auto mb-2 mb-lg-0">
+      <ul class="navbar ms-auto mb-2 mb-lg-0 list-unstyled">
         
         <% if Current.user %>
-          <li class="nav-item">
-            <%= link_to Current.user.email, edit_password_path %>
+          <li class="nav-item mx-2">
+            <%= link_to Current.user.email, edit_password_path, class: "btn btn-outline-secondary" %>
           </li>
-          <li class="nav-item">
-            <%= button_to "Logout", logout_path, method: :delete, class: "btn-outline-secondary" %>
+          <li class="nav-item mx-2">
+            <%= button_to "Logout", logout_path, method: :delete, class: "btn btn-outline-danger" %>
           </li>
         <% else %>
-          <li class="nav-item">
-            <%= link_to" Sign Up", sign_up_path, class: "nav-link" %>
+          <li class="nav-item mx-2">
+            <%= link_to" Sign Up", sign_up_path, class: "nav-link btn btn-outline-primary" %>
           </li>
-          <li class="nav-item">
-            <%= link_to" Login", sign_in_path, class: "nav-link" %>
+          <li class="nav-item mx-2">
+            <%= link_to" Login", sign_in_path, class: "nav-link btn btn-outline-primary"%>
           </li>
         <% end %>
       </ul>
